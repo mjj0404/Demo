@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jaej.demo.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_doTimedTaskFragment"
+            app:destination="@id/doTimedTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_task"
+        android:name="com.jaej.demo.ui.task.TaskFragment"
+        android:label="@string/menu_task"
+        tools:layout="@layout/fragment_task" />
+
+    <fragment
+        android:id="@+id/nav_life_view"
+        android:name="com.jaej.demo.ui.lifeview.LifeViewFragment"
+        android:label="@string/menu_life_view"
+        tools:layout="@layout/fragment_life_view" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.jaej.demo.ui.menu.SettingFragment"
+        android:label="@string/Setting" />
+    <fragment
+        android:id="@+id/howToUseFragment"
+        android:name="com.jaej.demo.ui.menu.HowToUseFragment"
+        android:label="About App"
+        tools:layout="@layout/fragment_how_to_use" />
+    <fragment
+        android:id="@+id/doTimedTaskFragment"
+        android:name="com.jaej.demo.ui.home.DoTimedTaskFragment"
+        android:label="Countdown Timer"
+        tools:layout="@layout/fragment_do_timed_task" />
+
+</navigation>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:backgroundTint="@color/dark_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/task_item_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/light_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:background="@color/light_background"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="sdf"
+                    android:textColor="@color/light_text"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/task_edit_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/light_background"
+                    android:tint="@color/white"
+                    android:contentDescription="modify task"
+                    app:srcCompat="@drawable/ic_edit_24px" />
+
+                <ImageButton
+                    android:id="@+id/task_delete_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/light_background"
+                    android:tint="@color/white"
+                    android:contentDescription="delete the task"
+                    app:srcCompat="@drawable/ic_delete_24px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:paddingEnd="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/sunday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Sun"
+                    android:textColor="@color/red"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/monday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Mon"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tuesday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Tue"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/wednesday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Wed"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/thursday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Thr"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/friday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Fri"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/saturday_text_view_recyclerview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Sat"
+                    android:textColor="@color/blue"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/light_background"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/light_text"
+                    android:gravity="center"
+                    android:text="Overall"
+                    android:maxLines="1"
+                    android:layout_weight="1.7"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textColor="@color/light_text"
+                    android:text=":"
+                    android:layout_weight="0.3"/>
+
+                <TextView
+                    android:id="@+id/overall_color_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="\u2588\u2588"
+                    android:gravity="end"
+                    android:textSize="13sp"
+                    android:layout_weight="1"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,434 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_background">
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:context=".AddModifyActivity"
+        android:layout_gravity="center_horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edit_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/light_text"
+            android:textColorHint="@color/light_text"
+            android:hint="@string/enter_task_name"
+            android:importantForAutofill="no"
+            android:inputType="textAutoComplete"
+            android:padding="6dp"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:id="@+id/range_picker_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/pick_range_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="@color/light_text"
+                android:layout_gravity="center_vertical"
+                android:text="@string/select_date_range"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:id="@+id/start_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="@color/light_text"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/middle_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/light_text"
+                android:text="@string/dash"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/end_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/light_text"
+                android:layout_weight="4"/>
+
+            <ImageButton
+                android:id="@+id/range_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_background"
+                app:srcCompat="@drawable/ic_insert_invitation_24px"
+                android:contentDescription="@string/select_task_start_date"
+                app:tint="@color/icon"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/one_day_picker_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/one_day_start_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="@color/light_text"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"/>
+
+
+            <TextView
+                android:id="@+id/one_day_middle_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/light_text"
+                android:text="@string/dash"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/one_day_end_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/light_text"
+                android:layout_weight="4"/>
+
+            <ImageButton
+                android:id="@+id/one_day_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_background"
+                app:srcCompat="@drawable/ic_insert_invitation_24px"
+                android:contentDescription="@string/select_task_end_date"
+                app:tint="@color/icon"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/days_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <Button
+                android:id="@+id/sunday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/s"
+                android:textColor="@color/red"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/monday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/m"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/tuesday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/t"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/wednesday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/w"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/thursday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/t"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/friday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/f"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/saturday_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/button_color"
+                android:text="@string/s"
+                android:textColor="@color/blue"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:weightSum="10">
+
+            <Switch
+                android:id="@+id/check_timed_switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="To Finish"
+                android:layout_weight="4"
+                android:maxLines="1"
+                android:textColor="@color/light_text"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/is_timed_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="19sp"
+                android:textColor="@color/light_text"
+                android:text="@string/mark_as_done" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_session_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:weightSum="10"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/task_mills"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/task_time_in_minutes"
+                android:textColor="@color/light_text"
+                android:textSize="19sp"
+                android:layout_weight="5.5"/>
+
+            <Spinner
+                android:id="@+id/task_mills_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sound_setting_layout"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="19sp"
+                android:textColor="@color/light_text"
+                android:layout_weight="9"
+                android:text="@string/task_timer_alarm_setting" />
+
+            <ImageButton
+                android:id="@+id/sound_setting_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:contentDescription="@string/select_alarm_option"
+                app:srcCompat="@drawable/ic_notifications_active_24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/repetition_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/task_repetition_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/light_text"
+                android:text="@string/repetition"
+                android:textSize="19sp"
+                android:layout_weight="4"/>
+
+            <SeekBar
+                android:id="@+id/task_repetition_seek_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="9"
+                android:progress="0"
+                android:layout_weight="6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rest_session_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/rest_mills_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/rest_time_in_minutes"
+                android:textColor="@color/light_text"
+                android:textSize="19sp"
+                android:layout_weight="5.5"/>
+
+            <Spinner
+                android:id="@+id/rest_mills_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/task_close"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="@color/light_background"
+                android:onClick="onClick"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:tint="@color/icon"
+                android:contentDescription="@string/cancel"
+                app:srcCompat="@drawable/ic_close_24px" />
+
+            <ImageButton
+                android:id="@+id/task_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:background="@color/light_background"
+                android:tint="@color/icon"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/save"
+                app:srcCompat="@drawable/ic_check_24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textColor="@color/light_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/save_cap"
+                android:textColor="@color/light_text"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

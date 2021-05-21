@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    tools:context=".ui.lifeview.LifeViewFragment">
+
+    <TextView
+        android:id="@+id/life_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_view_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/life_view_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="@color/dark_background"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:textColor="@color/light_text"
+                    android:maxLines="1"
+                    android:text="@string/current_view_selections" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:text="@string/birthday"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/birthday_view_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:layout_weight="6"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:text="@string/view_start"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/view_from_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:layout_weight="6"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:text="@string/view_end"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/view_to_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:layout_weight="6"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:text="@string/group_by"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/view_group_by_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:layout_weight="6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/partition_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:text="@string/partition"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/partition_view_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_text"
+                        android:maxLines="1"
+                        android:layout_weight="6"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/life_view_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:text="@string/view" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.DoTimedTaskFragment"
+    android:padding="20dp"
+    android:background="@color/light_background">
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/light_text"
+        android:gravity="center"
+        android:text="@string/task_name"/>
+
+    <TextView
+        android:id="@+id/remaining_time"
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_text"
+        android:textSize="23sp"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/countdown_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/task_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textColor="@color/sky" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/give_up_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:onClick="onClick"
+            android:tint="@color/icon"
+            android:background="@color/light_background"
+            android:layout_weight="1"
+            android:contentDescription="@string/stop_current_ongoing_task"
+            android:src="@drawable/ic_stop_24px" />
+
+        <ImageButton
+            android:id="@+id/break_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:onClick="onClick"
+            android:tint="@color/icon"
+            android:background="@color/light_background"
+            android:layout_weight="1"
+            android:contentDescription="@string/take_5_minutes_break"
+            android:src="@drawable/ic_coffee_24px" />
+
+
+
+        <ImageButton
+            android:id="@+id/start_task_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:onClick="onClick"
+            android:tint="@color/icon"
+            android:background="@color/light_background"
+            android:layout_weight="1"
+            android:contentDescription="@string/begin_task_timer"
+            android:src="@drawable/ic_play_arrow_24px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/light_text"
+            android:gravity="center"
+            android:text="@string/stop" />
+
+        <TextView
+            android:id="@+id/take_rest_minute_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/light_text"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/light_text"
+            android:gravity="center"
+            android:text="@string/begin_task" />
+    </LinearLayout>
+
+
+</LinearLayout>

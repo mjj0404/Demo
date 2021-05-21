@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Setting</string>
+    <string name="menu_home">Today\'s Task</string>
+    <string name="menu_task">All Tasks</string>
+    <string name="menu_life_view">Life ColorView</string>
+    <string name="Setting">Setting</string>
+    <string-array name="task_minutes">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>105</item>
+        <item>110</item>
+        <item>115</item>
+        <item>120</item>
+    </string-array>
+    <string-array name="rest_minute">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="ringtone">
+        <item>Modern Bell</item>
+        <item>Airplane Bell</item>
+        <item>Triangle</item>
+        <item>Marimba I</item>
+        <item>Marimba II</item>
+        <item>Arcade Effect</item>
+    </string-array>
+    <string-array name="start_range">
+        <item>Birthday</item>
+        <item>Past 1 Year</item>
+        <item>This Year Start</item>
+        <item>Entire App History</item>
+    </string-array>
+    <string-array name="end_range">
+        <item>Today</item>
+        <item>This Year End</item>
+        <item>Age 80</item>
+        <item>Age 100</item>
+    </string-array>
+    <string-array name="group_by">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+    <string name="dash">-</string>
+    <string name="about">About</string>
+    <string name="enter_task_name">Enter Task Name</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="select_task_start_date">select task start date</string>
+    <string name="select_task_end_date">select task end date</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="mark_as_done">Mark as Done</string>
+    <string name="task_time_in_minutes">Task Time in Minutes</string>
+    <string name="task_timer_alarm_setting">Task Timer Alarm Setting</string>
+    <string name="select_alarm_option">select alarm option</string>
+    <string name="repetition">Repetition</string>
+    <string name="rest_time_in_minutes">Rest time in Minutes</string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="close">Close</string>
+    <string name="save_cap">Save</string>
+    <string name="task_name">Task name</string>
+    <string name="stop_current_ongoing_task">stop current ongoing task</string>
+    <string name="take_5_minutes_break">take 5 minutes break</string>
+    <string name="begin_task_timer">begin task timer</string>
+    <string name="stop">Stop</string>
+    <string name="begin_task">Begin Task</string>
+    <string name="current_view_selections">Current View Selections</string>
+    <string name="birthday">Birthday</string>
+    <string name="view_start">View Start</string>
+    <string name="view_end">View End</string>
+    <string name="group_by">Group By</string>
+    <string name="partition">Partition</string>
+    <string name="view">View</string>
+    <string name="set_your_birthday">Set Your Birthday</string>
+    <string name="select_your_birthday">Select Your Birthday</string>
+    <string name="setup_view_range">Setup View Range</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="use_partition">Use Partition</string>
+    <string name="no_partition">No Partition</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="split_partition">Split Partition</string>
+    <string name="empty_block">Empty block</string>
+    <string name="break_line">Break Line</string>
+    <string name="life_colorbook">Life ColorBook</string>
+    <string name="this_is_timed_task">this is timed task</string>
+</resources>
