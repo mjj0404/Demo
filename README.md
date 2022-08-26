@@ -11,18 +11,8 @@ link to Youtube video: https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TE
 link to his blog: https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html<br />
 
 ### Structure
+Navigation Component
+RxJava | BroadcastReceiver | Volley | Zenquotes API (for daily motivational quote retrieval)
+ROOM
 
-|Activity & Adapters|
-|-|
-|⬆⬆⬆⬆⬆⬆|
-|ViewModel & LiveData|
-|⬆⬆⬆⬆⬆⬆|
-|Repository|
-|⬆⬆⬆⬆⬆⬆|
-|Models SQLite DAO|
 
-### Other Components and APIs used<br />
-Navigation Drawer<br />
-RxJava3 for one-time database observation<br />
-Material IO FAB & DatePicker<br />
-Zenquotes API for daily random motivational quote retrival<br />
