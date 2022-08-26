@@ -10,9 +10,10 @@ Inspire by Tim Urban's idea shared on TED talk<br />
 link to Youtube video: https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TED<br />
 link to his blog: https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html<br />
 
-### Structure
+# Structure
 Navigation Component
 RxJava | BroadcastReceiver | Volley | Zenquotes API (for daily motivational quote retrieval)
 ROOM
 
-
+# License
+MIT License
